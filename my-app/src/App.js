@@ -28,21 +28,19 @@ function App() {
         const api_url = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}`);
         const data = await api_url.json();
         setCityName('');
-        if (data.cod[0] === '4') {
-            if (cityName.trim() === '') {
-                setError('City field is required. Fill it out.');
-            } else {
-                setError('Enter existing city.');
-            }
+
+        if (cityName.trim() === '') {
+            setError('City field is required. Fill it out.');
             setState({});
             return;
         }
 
-        //extra check (by the reason of weird behavior of API)
-        if (cityName.trim() === '') {
-            setError('City field is required. Fill it out.');
-            return
+        if (data.cod[0] === '4') {
+            setError('Enter existing city.');
+            setState({});
+            return;
         }
+
         //temperature from Kelvin
         const temperature = data.main.temp;
         const tempToFahrenheit = Math.floor(temperature - 273.15);

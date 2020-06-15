@@ -6,6 +6,7 @@
 }
 
 .output {
+    margin-right: 10%;
     display: flex;
     justify-content: center;
     min-width: 100vw;

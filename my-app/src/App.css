@@ -16,7 +16,7 @@
 
 
 .text_header {
-
+    margin-right: 10%;
     margin-top: 3%;
     margin-bottom: 0.5%;
     font-size: 5em;
@@ -35,10 +35,11 @@ hr {
 
 .informer_text {
     color: #d3556e;
-    margin-left: 40%;
+    margin-left: 48%;
 }
 
 .brief_description {
+    margin-right: 10%;
     margin-left: 135px;
     margin-bottom: 1%;
     font-size: 1.5em;
@@ -72,13 +73,13 @@ hr {
 @keyframes rotate {
     0% {
         top: 110px;
-        left: 950px;
+        left: 910px;
     }
     50% {
     }
     100% {
         top: 110px;
-        left: 505px;
+        left: 440px;
     }
     to {
         transform: rotate(360deg);
