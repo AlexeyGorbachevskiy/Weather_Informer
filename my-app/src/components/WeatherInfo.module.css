@@ -1,5 +1,68 @@
-
-
 .error_message {
     color: red;
+    /*font-style: italic;*/
+    width: 380px;
+    margin-left: 16%;
+}
+
+.output {
+    display: flex;
+    justify-content: center;
+    min-width: 100vw;
+}
+
+.info {
+    border: 3px solid black;
+    margin: 2% 0 0 10%;
+    text-align: center;
+    border-radius: 4px;
+    width: 30%;
+}
+
+
+.city {
+    font-family: -apple-system;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.cloudsDescription {
+    font-family: -apple-system;
+    font-style: oblique;
+    font-size: 18px;
+}
+
+.temperature {
+    font-size: 30px;
+    font-weight: 600;
+}
+.visibility{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 1%;
+}
+
+.humidity{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 1%;
+}
+
+.pressure{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 1%;
+}
+
+.sunrise{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 1%;
+}
+
+
+.sunset{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 1%;
 }

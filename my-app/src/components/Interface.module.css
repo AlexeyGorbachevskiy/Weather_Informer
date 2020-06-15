@@ -1,5 +1,47 @@
 
+.form {
+    margin-left: 15%;
+    display: flex;
+    align-items: flex-end;
+    width: 380px;
+    height: 35px;
+}
+
+
 .error {
     border: 1px solid red;
 }
+
+
+#input {
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid;
+    width: 300px;
+    height: 25px;
+}
+
+#input:focus {
+    border: 2px solid;
+}
+
+#search_btn {
+    margin-left: 15px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+#search_btn:hover {
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+#search_btn:active {
+    border: 2px solid;
+}
+
+
+
 

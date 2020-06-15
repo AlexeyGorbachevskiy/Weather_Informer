@@ -7,10 +7,13 @@ function Interface(props) {
         props.setError(null);
     }
     return (
-        <form onSubmit={props.getWeatherInfo}>
-            <input className={props.error && obj.error} onChange={onInputChangeHandler} value={props.cityName}
+        <form className={obj.form} onSubmit={props.getWeatherInfo}>
+            <input id={obj.input} className={props.error && obj.error} onChange={onInputChangeHandler}
+                   value={props.cityName}
                    type='text' name='city' placeholder='Type a city...'/>
-            <button>Get weather</button>
+            <span>
+            <button id={obj.search_btn} className="material-icons">search</button>
+            </span>
         </form>
     );
 }

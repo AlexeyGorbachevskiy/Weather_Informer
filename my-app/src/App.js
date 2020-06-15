@@ -6,7 +6,6 @@ import WeatherInfo from "./components/WeatherInfo";
 
 function App() {
 
-
     const [state, setState] = useState({
         countryCode: undefined,
         city: undefined,
@@ -16,7 +15,7 @@ function App() {
         pressure: undefined,
         sunrise: undefined,
         sunset: undefined,
-        brokenClouds: undefined,
+        cloudsDescription: undefined,
         cloudsIcon: undefined,
     });
     const [cityName, setCityName] = useState('');
@@ -28,7 +27,6 @@ function App() {
         e.preventDefault();
         const api_url = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}`);
         const data = await api_url.json();
-
         setCityName('');
         if (data.cod[0] === '4') {
             if (cityName.trim() === '') {
@@ -38,6 +36,12 @@ function App() {
             }
             setState({});
             return;
+        }
+
+        //extra check (by the reason of weird behavior of API)
+        if (cityName.trim() === '') {
+            setError('City field is required. Fill it out.');
+            return
         }
         //temperature from Kelvin
         const temperature = data.main.temp;
@@ -78,9 +82,24 @@ function App() {
     }
 
     return (
-        <div className={'container'}>
-            <h2>Weather Informer</h2>
-            <p>Find out the weather in your city!</p>
+        <div className='container'>
+            <h2 className='text_header'>
+                {
+                    state.cloudsIcon ?
+                        <img className={'alternative_cloud'} width={'34px'}
+                             src={`http://openweathermap.org/img/w/${state.cloudsIcon}.png`}
+                             alt='Weather icon should have been located here'/>
+                        :
+                        <i id='cloud' className="material-icons">wb_cloudy</i>
+                }
+
+                Weather
+                <i id='sun' className="material-icons">wb_sunny</i>
+                <p className='informer_text'>Informer</p>
+                <hr/>
+            </h2>
+            <p className='brief_description'>Find out the weather in your city!</p>
+
             <Interface setError={setError} error={error} setCityName={setCityName} cityName={cityName}
                        getWeatherInfo={getWeatherInfo}/>
             <WeatherInfo error={error} state={state}/>
