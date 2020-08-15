@@ -73,13 +73,13 @@ hr {
 @keyframes rotate {
     0% {
         top: 110px;
-        left: 910px;
+        left: 980px;
     }
     50% {
     }
     100% {
         top: 110px;
-        left: 440px;
+        left: 515px;
     }
     to {
         transform: rotate(360deg);
