@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Weather_Informer/static/css/main.4817ef9c.chunk.css",
+    "main.css": "/Weather_Informer/static/css/main.4274d583.chunk.css",
     "main.js": "/Weather_Informer/static/js/main.6e8f4963.chunk.js",
     "main.js.map": "/Weather_Informer/static/js/main.6e8f4963.chunk.js.map",
     "runtime-main.js": "/Weather_Informer/static/js/runtime-main.68b44894.js",
@@ -8,16 +8,16 @@
     "static/js/2.fc7c5eaa.chunk.js": "/Weather_Informer/static/js/2.fc7c5eaa.chunk.js",
     "static/js/2.fc7c5eaa.chunk.js.map": "/Weather_Informer/static/js/2.fc7c5eaa.chunk.js.map",
     "index.html": "/Weather_Informer/index.html",
-    "precache-manifest.01cb5f192004c8ca186512a0a6699bd2.js": "/Weather_Informer/precache-manifest.01cb5f192004c8ca186512a0a6699bd2.js",
+    "precache-manifest.3480c917afbde81e19a8d0d5d808924c.js": "/Weather_Informer/precache-manifest.3480c917afbde81e19a8d0d5d808924c.js",
     "service-worker.js": "/Weather_Informer/service-worker.js",
-    "static/css/main.4817ef9c.chunk.css.map": "/Weather_Informer/static/css/main.4817ef9c.chunk.css.map",
+    "static/css/main.4274d583.chunk.css.map": "/Weather_Informer/static/css/main.4274d583.chunk.css.map",
     "static/js/2.fc7c5eaa.chunk.js.LICENSE.txt": "/Weather_Informer/static/js/2.fc7c5eaa.chunk.js.LICENSE.txt",
     "static/media/App.css": "/Weather_Informer/static/media/wave.9b44a343.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.68b44894.js",
     "static/js/2.fc7c5eaa.chunk.js",
-    "static/css/main.4817ef9c.chunk.css",
+    "static/css/main.4274d583.chunk.css",
     "static/js/main.6e8f4963.chunk.js"
   ]
 }
